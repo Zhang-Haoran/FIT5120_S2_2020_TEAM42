@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIT5120_S2_2020_TEAM42", "FIT5120_S2_2020_TEAM42\FIT5120_S2_2020_TEAM42.csproj", "{587ACED8-6E71-4B7A-8933-4EE5D37A724B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{587ACED8-6E71-4B7A-8933-4EE5D37A724B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{587ACED8-6E71-4B7A-8933-4EE5D37A724B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{587ACED8-6E71-4B7A-8933-4EE5D37A724B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{587ACED8-6E71-4B7A-8933-4EE5D37A724B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D60B5D0-2BC2-48E3-A884-491B00CEE54A}
+	EndGlobalSection
+EndGlobal
