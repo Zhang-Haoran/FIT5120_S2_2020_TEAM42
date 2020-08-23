@@ -4,8 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AyeMate!</title>
-    @*@Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")*@
     <script>
         addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
@@ -30,7 +28,7 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-gradient-secondary">
                 <h1>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="~/Home/Index">
                         Aye Mate!
                     </a>
                 </h1>
@@ -41,13 +39,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-lg-auto text-center">
                         <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="~/Home/Index">
                                 Home
-                                <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item  active mr-lg-3 mt-lg-0 mt-3">
-                            <a class="nav-link" href="about.html">about</a>
+                            <a class="nav-link" href="~/Home/About">about</a>
                         </li>
                         <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -58,11 +55,11 @@
                                 <a class="dropdown-item" href="gallery.html">gallery</a>
                                 <a class="dropdown-item scroll" href="#team">team</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index.html">explore</a>
+                                <a class="dropdown-item" href="~/Home/Index">explore</a>
                             </div>
                         </li>
                         <li class="nav-item mr-lg-3 mt-lg-0 mt-3">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="~/Home/Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -76,9 +73,9 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb d-flex justify-content-center bg-theme">
             <li class="breadcrumb-item">
-                <a href="index.html">Home</a>
+                <a href="~/Home/Indexl">Home</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewContext.RouteData.Values["action"].ToString()</li>
         </ol>
     </nav>
     <!-- //breadcrumbs -->
@@ -164,135 +161,7 @@
         </div>
     </section>
     <!-- //about -->
-    <!-- explore-->
-    <div class="banner-section" id="explore">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="slider-container col-lg-12 mx-auto">
-                    <div class="w3ls-about-banner">
-                        <div class="callbacks_container">
-                            <ul class="rslides callbacks callbacks1 slider3">
-                                <li>
-                                    <div class="slide-img slide-img1">
-                                        <div class="banner-info">
-                                            <h3>teens hub</h3>
-                                        </div>
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="slide-img slide-img2">
-                                        <div class="banner-info">
-                                            <h3>teens hub</h3>
-                                        </div>
-                                    </div>
-
-                                </li>
-                                <li>
-                                    <div class="slide-img slide-img3">
-                                        <div class="banner-info">
-                                            <h3>teens hub</h3>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="slider-right">
-                            <h3 class="title">a healthy start - opportunities to be part of the community</h3>
-                            <p>This Is A Demo Text You May Write A Brief Text Here To Explain The Title.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--//explore-->
-
-    <!-- //team -->
-    <!-- testimonials -->
-    <div class="testimonials align-w3" id="testi">
-        <div class="container">
-            <div class="wthree_pvt_title text-center">
-                <h4 class="w3pvt-title">
-                    testimonials
-                </h4>
-                <span class="sub-title">add your caption here</span>
-            </div>
-            <div id="carouselExampleIndicators" class="carousel slide py-lg-5" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-12 testimonials_grid">
-                                <div class="testi-text text-center">
-                                    <p>
-                                        <span class="fa fa-quote-left"></span>Lorem ipsum dolor sit or sit
-                                        amet,consetetur sadipscing elitr, amet,sed
-                                        diam
-                                        nonumy eirmod tempor
-                                        invidunt ut labore et dolore magna aliquyam erat<span class="fa fa-quote-right"></span>
-                                    </p>
-                                </div>
-                                <div class="d-flex mt-md-5 mt-3 align-items-center justify-content-center">
-                                    <div class="testi-desc">
-                                        <h5 class="mb-2">Aliquyam</h5>
-                                        <p>Member</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-12 testimonials_grid">
-                                <div class="testi-text text-center">
-                                    <p>
-                                        <span class="fa fa-quote-left"></span>At vero eos et accusam et
-                                        justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, no sea
-                                        takimata
-                                        sanctus est Lorem ipsum dolor sit amet.<span class="fa fa-quote-right"></span>
-                                    </p>
-                                </div>
-                                <div class="d-flex mt-md-5 mt-3 align-items-center justify-content-center">
-                                    <div class="testi-desc">
-                                        <h5 class="mb-2">Takimata</h5>
-                                        <p>Member</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-lg-12 testimonials_grid">
-                                <div class="testi-text text-center">
-                                    <p>
-                                        <span class="fa fa-quote-left"></span>Stet clita kasd gubergren, no sea
-                                        takimata sanctus est Lorem ipsum dolor sit amet. no sea takimata
-                                        sanctus
-                                        est
-                                        Lorem ipsum dolor sit amet.<span class="fa fa-quote-right"></span>
-                                    </p>
-                                </div>
-                                <div class="d-flex mt-md-5 mt-3 align-items-center justify-content-center">
-                                    <div class="testi-desc">
-                                        <h5 class="mb-2">Sanctus</h5>
-                                        <p>Member</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //testimonials -->
+  
     <!-- footer -->
     <footer class="footer py-md-5 pt-md-3 pb-sm-5">
         <div class="container-fluid">
@@ -459,26 +328,13 @@
     </script>
     <script>
         $(document).ready(function () {
-            /*
-            var defaults = {
-                containerID: 'toTop', // fading element id
-                containerHoverID: 'toTopHover', // fading element hover id
-                scrollSpeed: 1200,
-                easingType: 'linear'
-            };
-            */
+          
             $().UItoTop({
                 easingType: 'easeOutQuart'
             });
 
         });
     </script>
-    @*@Scripts.Render("~/Vendor/js/SmoothScroll.min.js")*@
-    @*@Scripts.Render("~/Vendor/js/bootstrap.js")*@
-
-
-    @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")*@
     @RenderSection("scripts", required: false)
 </body>
 </html>
