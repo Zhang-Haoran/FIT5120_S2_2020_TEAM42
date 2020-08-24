@@ -44,7 +44,7 @@
             success: function (data) {
                 console.log(data);
                 var s = "";
-                if (data.length > 0) {
+                
                     s += "<div class='container'>";
                     s += "<div class='row'>";
                     s += "<div class='col - 12'>";
@@ -57,16 +57,7 @@
                     s += "</div>";
                     s += "</div>";
                     $("#result").html(s);
-                } else {
-                    s += "<div class='container'>";
-                    s += "<div class='row'>";
-                    s += "<div class='col - 12'>";
-                    s += "There is no result";
-                    s += "</div>";
-                    s += "</div>";
-                    s += "</div>";
-                    $("#result").html(s);
-                }
+                
             }
         })
     })
