@@ -44,18 +44,29 @@
             success: function (data) {
                 console.log(data);
                 var s = "";
-                s += "<div class='container'>";
-                s += "<div class='row'>";
-                s += "<div class='col - 12'>";
-                s += "Energy in kcal: " + data.parsed[0].food.nutrients.ENERC_KCAL + "<br>";
-                s += "Protein in g: " + data.parsed[0].food.nutrients.PROCNT + "<br>";
-                s += "Fat in g: " + data.parsed[0].food.nutrients.FAT + "<br>";
-                s += "Carbs in g: " + data.parsed[0].food.nutrients.CHOCDF + "<br>";
-                s += "Fiber in g: " + data.parsed[0].food.nutrients.FIBTG + "<br>";
-                s += "</div>";
-                s += "</div>";
-                s += "</div>";
-                $("#result").html(s);
+                if (data.length > 0) {
+                    s += "<div class='container'>";
+                    s += "<div class='row'>";
+                    s += "<div class='col - 12'>";
+                    s += "Energy in kcal: " + data.parsed[0].food.nutrients.ENERC_KCAL + "<br>";
+                    s += "Protein in g: " + data.parsed[0].food.nutrients.PROCNT + "<br>";
+                    s += "Fat in g: " + data.parsed[0].food.nutrients.FAT + "<br>";
+                    s += "Carbs in g: " + data.parsed[0].food.nutrients.CHOCDF + "<br>";
+                    s += "Fiber in g: " + data.parsed[0].food.nutrients.FIBTG + "<br>";
+                    s += "</div>";
+                    s += "</div>";
+                    s += "</div>";
+                    $("#result").html(s);
+                } else {
+                    s += "<div class='container'>";
+                    s += "<div class='row'>";
+                    s += "<div class='col - 12'>";
+                    s += "There is no result";
+                    s += "</div>";
+                    s += "</div>";
+                    s += "</div>";
+                    $("#result").html(s);
+                }
             }
         })
     })

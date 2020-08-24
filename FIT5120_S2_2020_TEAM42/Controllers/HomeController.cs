@@ -27,7 +27,7 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
             return View();
         }
 
-        public ActionResult F1()
+        public ActionResult Diet()
         {
             return View();
         }

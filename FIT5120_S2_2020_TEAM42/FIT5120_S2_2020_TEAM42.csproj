@@ -268,7 +268,7 @@
     <Content Include="Vendor\fonts\fontawesome-webfont.woff" />
     <Content Include="Vendor\fonts\fontawesome-webfont.woff2" />
     <Content Include="Vendor\fonts\FontAwesome.otf" />
-    <Content Include="Views\Home\F1.cshtml" />
+    <Content Include="Views\Home\Diet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
