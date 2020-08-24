@@ -4,16 +4,24 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>F1</h2>
+
+
 
 <div class="container">
     <div class="row">
         <div class="col-12">
             <div id="enterFoodText">
-                <h5>Enter food name</h5>
-                <input id ="foodName"type="text" name="foodName" value="" placeholder="Your food name" />
+                <h4 class="w3pvt-title">
+                    Search food nutribution
+                </h4>
+                <br />
+
+                <input id="foodName" type="text" name="foodName" value="" class="form-control-lg" placeholder="Your food name" />
+                <br />
                 <br />
                 <button id="checkFood" type="submit" value="submit" class="btn btn-success btn-lg">check food nutribution</button>
+                <br />
+                <br />
                 <div id="result">
 
                 </div>
@@ -23,14 +31,14 @@
 </div>
 <script src="~/Vendor/js/jquery-2.2.3.min.js"></script>
 <script>
-    
-    
+
+
     $("#checkFood").click(function (e) {
         var foodname = document.getElementById("foodName").value.replace(/ /g, "%20");
         console.log(foodname);
         $.ajax({
             type: "GET",
-            url: 'https://api.edamam.com/api/food-database/v2/parser?ingr='+ foodname +'&app_id=e8b1af6b&app_key=f9fd6581e14f2244a8d3ce5ebae58fb5',
+            url: 'https://api.edamam.com/api/food-database/v2/parser?ingr=' + foodname + '&app_id=e8b1af6b&app_key=f9fd6581e14f2244a8d3ce5ebae58fb5',
             data: $('form').serialize(),
             dataType: 'json',
             success: function (data) {
@@ -43,7 +51,7 @@
                 s += "Protein in g: " + data.parsed[0].food.nutrients.PROCNT + "<br>";
                 s += "Fat in g: " + data.parsed[0].food.nutrients.FAT + "<br>";
                 s += "Carbs in g: " + data.parsed[0].food.nutrients.CHOCDF + "<br>";
-                s += "Fiber in g: " + data.parsed[0].food.nutrients.FIBTG + "<br>"; 
+                s += "Fiber in g: " + data.parsed[0].food.nutrients.FIBTG + "<br>";
                 s += "</div>";
                 s += "</div>";
                 s += "</div>";
