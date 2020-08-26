@@ -4,6 +4,37 @@
 	License URL: http://creativecommons.org/licenses/by/3.0/
  --*/
 
+/*
+flip card
+*/
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -114,7 +145,7 @@ a.navbar-brand {
     font-size: 1em;
     text-transform: uppercase;
     background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-    background: radial-gradient(circle at 35% 100%, #6cd86c 20%, #fcff3b 30%, #6cd86c 62%, #fcff3b 70%, #15b915);
+    background:white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
