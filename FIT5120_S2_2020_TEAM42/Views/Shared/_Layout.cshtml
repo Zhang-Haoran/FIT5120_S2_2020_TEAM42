@@ -83,14 +83,13 @@
     <section class="single_grid_w3_main align-w3" id="about">
         <div class="container">
             <div class="wthree_pvt_title text-center">
-             
+
                 @RenderBody()
             </div>
-     
+
         </div>
     </section>
     <!-- //about -->
-  
     <!-- footer -->
     <footer class="footer py-md-5 pt-md-3 pb-sm-5">
         <div class="container-fluid">
@@ -156,13 +155,6 @@
         </p>
     </div>
     <!-- //copyright -->
-
-
-
-
-
-
-
     <!--Vendor js-->
     @Scripts.Render("~/Vendor/js/jquery-2.2.3.min.js")
     @Scripts.Render("~/Vendor/js/responsiveslides.min.js")
@@ -188,6 +180,8 @@
     </script>
     @Scripts.Render("~/Vendor/js/move-top.js")
     @Scripts.Render("~/Vendor/js/easing.js")
+    @Scripts.Render("~/Paint/js/bootstrap.min.js")
+
     <script>
         jQuery(document).ready(function ($) {
             $(".scroll").click(function (event) {
@@ -201,7 +195,7 @@
     </script>
     <script>
         $(document).ready(function () {
-          
+
             $().UItoTop({
                 easingType: 'easeOutQuart'
             });

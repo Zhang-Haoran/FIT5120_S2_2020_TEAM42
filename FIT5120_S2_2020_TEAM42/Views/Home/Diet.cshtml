@@ -5,6 +5,62 @@
 }
 
 
+<script src="~/Vendor/js/jquery-2.2.3.min.js"></script>
+<script src="~/Paint/js/bootstrap.min.js"></script>
+
+@Scripts.Render("~/Vendor/js/jquery-2.2.3.min.js")
+@Scripts.Render("~/Vendor/js/responsiveslides.min.js")
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+        // Slideshow 4
+        $(".slider3").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: false,
+            speed: 500,
+            namespace: "callbacks",
+            before: function () {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function () {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+
+    });
+</script>
+@Scripts.Render("~/Vendor/js/move-top.js")
+@Scripts.Render("~/Vendor/js/easing.js")
+<script>
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 1000);
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+
+    });
+</script>
+
+
+
+
+
+
+
+
+
 
 
 <div class="container">
@@ -29,7 +85,7 @@
         </div>
     </div>
 </div>
-<script src="~/Vendor/js/jquery-2.2.3.min.js"></script>
+
 <script>
 
 
@@ -44,20 +100,20 @@
             success: function (data) {
                 console.log(data);
                 var s = "";
-                
-                    s += "<div class='container'>";
-                    s += "<div class='row'>";
-                    s += "<div class='col - 12'>";
-                    s += "Energy in kcal: " + data.parsed[0].food.nutrients.ENERC_KCAL + "<br>";
-                    s += "Protein in g: " + data.parsed[0].food.nutrients.PROCNT + "<br>";
-                    s += "Fat in g: " + data.parsed[0].food.nutrients.FAT + "<br>";
-                    s += "Carbs in g: " + data.parsed[0].food.nutrients.CHOCDF + "<br>";
-                    s += "Fiber in g: " + data.parsed[0].food.nutrients.FIBTG + "<br>";
-                    s += "</div>";
-                    s += "</div>";
-                    s += "</div>";
-                    $("#result").html(s);
-                
+
+                s += "<div class='container'>";
+                s += "<div class='row'>";
+                s += "<div class='col - 12'>";
+                s += "Energy in kcal: " + data.parsed[0].food.nutrients.ENERC_KCAL + "<br>";
+                s += "Protein in g: " + data.parsed[0].food.nutrients.PROCNT + "<br>";
+                s += "Fat in g: " + data.parsed[0].food.nutrients.FAT + "<br>";
+                s += "Carbs in g: " + data.parsed[0].food.nutrients.CHOCDF + "<br>";
+                s += "Fiber in g: " + data.parsed[0].food.nutrients.FIBTG + "<br>";
+                s += "</div>";
+                s += "</div>";
+                s += "</div>";
+                $("#result").html(s);
+
             }
         })
     })
