@@ -112,20 +112,19 @@
                 <span class="sub-title">this is a demo text you may write a brief text here to explain the title</span>
             </div>
             <div class="row pt-md-4">
-                <div class="col-lg-6">
-                    <div class="card card-flip h-100">
-                        <div class="card-front text-white bg-dark">
-                            <div class="card-body">
-                                <i class="fa fa-search fa-5x float-right"></i>
-                                <h3 class="card-title">Front</h3>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <div class="col-lg-6">                   
+                    <div class="card card-flip h-100">                        
+                        <div class="card-front text-white bg-dark">                           
+                            <div class="card-body" onmouseover="dietCard()" style="background: url(../../Vendor/images/diet.jpg);background-size:cover">
+                                <h3 class="card-title">Do your know?</h3>
+
                             </div>
                         </div>
                         <div class="card-back bg-white">
-                            <div class="card-body">
-                                <h3 class="card-title">Back</h3>
-                                <p class="card-text">Suprise this one has more more more more content on the back!</p>
-                                <a href="#" class="btn btn-outline-secondary">Action</a>
+                            <div class="card-body"  style="background-color:white">
+                                <h3 class="card-title">Tips</h3>
+                                <p class="card-text" id="dietCard"></p>
+
                             </div>
                         </div>
                     </div>
@@ -141,27 +140,27 @@
                             Subheadings stand out because they are like mini titles. They make your post stand out and
                             make it more readable.
                         </p>
-                        <a class="btn bg-theme mt-4 wthree-link-bnr" href="about.html">
-                            view more
-                        </a>
+                        @*<a class="btn bg-theme mt-4 wthree-link-bnr" href="~/Home/Diet">
+                            Find healthy receipe 
+                        </a>*@
                     </div>
                 </div>
             </div>
             <div class="row flex-row-reverse sec-space">
                 <div class="col-lg-6">
                     <div class="card card-flip h-100">
-                        <div class="card-front text-white bg-primary">
-                            <div class="card-body">
-                                <i class="fa fa-arrow-circle-right fa-5x float-right"></i>
-                                <h3 class="card-title">Front</h3>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content. This one is a little because it has more text!</p>
+                        <div class="card-front text-white bg-dark">
+                            <div class="card-body" onmouseover="sleepCard()" style="background: url(../../Vendor/images/sleep.jpg);background-size:cover">
+                                <i class="fa fa-search fa-5x float-right"></i>
+                                <h3 class="card-title">Do your know?</h3>
+  
                             </div>
                         </div>
                         <div class="card-back bg-white">
-                            <div class="card-body text-primary">
-                                <h3 class="card-title">Wow! #3</h3>
-                                <p class="card-text">Suprise this one has content on the back!</p>
-                                <a href="#" class="btn btn-outline-primary">Action</a>
+                            <div class="card-body" style="background-color:white">
+                                <h3 class="card-title">Tips</h3>
+                                <p class="card-text" id="sleepCard"></p>
+
                             </div>
                         </div>
                     </div>
@@ -177,27 +176,27 @@
                             Subheadings stand out because they are like mini titles. They make your post stand out and
                             make it more readable.
                         </p>
-                        <a class="btn bg-theme mt-4 wthree-link-bnr" href="about.html">
-                            view more
-                        </a>
+                        @*<a class="btn bg-theme mt-4 wthree-link-bnr" href="~/Home/Sleep">
+                            Find healthy sleep
+                        </a>*@
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="card card-flip h-100">
-                        <div class="card-front text-white bg-danger">
-                            <div class="card-body">
+                        <div class="card-front text-white bg-dark">
+                            <div class="card-body" onmouseover="exeriseCard()" style="background: url(../../Vendor/images/exercise.jpg);background-size:cover">
                                 <i class="fa fa-search fa-5x float-right"></i>
-                                <h3 class="card-title">Front</h3>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <h3 class="card-title">Do your know?</h3>
+                                
                             </div>
                         </div>
                         <div class="card-back bg-white">
-                            <div class="card-body">
-                                <h3 class="card-title">Back</h3>
-                                <p class="card-text">Suprise this one has more more more more content on the back!</p>
-                                <a href="#" class="btn btn-outline-secondary">Action</a>
+                            <div class="card-body" style="background-color:white">
+                                <h3 class="card-title">Tips</h3>
+                                <p class="card-text" id="exeriseCard"></p>
+
                             </div>
                         </div>
                     </div>
@@ -213,9 +212,9 @@
                             Subheadings stand out because they are like mini titles. They make your post stand out and
                             make it more readable.
                         </p>
-                        <a class="btn bg-theme mt-4 wthree-link-bnr" href="about.html">
-                            view more
-                        </a>
+                        @*<a class="btn bg-theme mt-4 wthree-link-bnr" href="~/Home/Exercise">
+                            Find healthy exerise
+                        </a>*@
                     </div>
                 </div>
             </div>
@@ -351,6 +350,64 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="~/Vendor/js/bootstrap.js"></script>
+    <script>
+        var dietCount = 0;
+        var sleepCount = 0;
+        var exeriseCount = 0;
+        function dietCard() {
+            dietCount++;
+            var diet = [
+                'Eating slowly is also linked to more thorough chewing, which has also been linked to better weight maintenance',
+                'Eat Fresh Foods',
+                'Go For Mediterranean Diet',
+                'Get Your Vitamins Fix',
+                'Supplements Might Work',
+                'Take Care Of Nutritional Needs Of New-Borns',
+                'Take In Specific Nutrients',
+                'Start your day with a cup of co­ffee',
+                'Boost brainpower by treating yourself to a couple pieces of dark chocolate every few days',
+                'Work some omega-3 fatty acids into your diet'
+            ];
+            document.getElementById('dietCard').innerHTML = diet[dietCount % diet.length];
+        }
+
+        function sleepCard() {
+            sleepCount++;
+            var sleep = [
+                'Exercise for 30 minutes every day',
+                'Make over your running routine',
+                'Always warm up and cool down',
+                'Take this jump-rope challenge',
+                'Get a jump on weight loss',
+                'Dont cruise through cardio',
+                'Tone up on the treadmill'
+            ];
+            document.getElementById('sleepCard').innerHTML = sleep[sleepCount % sleep.length];
+        }
+
+        function exeriseCard() {
+            exeriseCount++;
+            var exerise = [
+                'Increase bright light exposure during the day',
+                'Reduce blue light exposure in the evening',
+                'Don’t consume caffeine late in the day',
+                'Reduce irregular or long daytime naps',
+                'Take a melatonin supplement',
+                'Consider these other supplements',
+                'Don’t drink alcohol',
+                'Optimize your bedroom environment',
+                'Set your bedroom temperature',
+                'Don’t eat late in the evening',
+                'Relax and clear your mind in the evening',
+                'Take a relaxing bath or shower',
+                'Rule out a sleep disorder',
+                'Get a comfortable bed, mattress, and pillow',
+                'Exercise regularly — but not before bed',
+                'Don’t drink any liquids before bed'
+            ];
+            document.getElementById('exeriseCard').innerHTML = exerise[exeriseCount % exerise.length];
+        }
+    </script>
 </body>
 
 </html>

@@ -190,6 +190,8 @@
     <Content Include="Vendor\fonts\fontawesome-webfont.svg" />
     <Content Include="Vendor\images\banner.jpg" />
     <Content Include="Vendor\images\close.png" />
+    <Content Include="Vendor\images\diet.jpg" />
+    <Content Include="Vendor\images\exercise.jpg" />
     <Content Include="Vendor\images\footer.jpg" />
     <Content Include="Vendor\images\g1.jpg" />
     <Content Include="Vendor\images\g2.jpg" />
@@ -199,6 +201,7 @@
     <Content Include="Vendor\images\move-top.png" />
     <Content Include="Vendor\images\next.png" />
     <Content Include="Vendor\images\prev.png" />
+    <Content Include="Vendor\images\sleep.jpg" />
     <Content Include="Vendor\images\t1.jpg" />
     <Content Include="Vendor\images\t2.jpg" />
     <Content Include="Vendor\images\t3.jpg" />
@@ -251,6 +254,8 @@
     <Content Include="Vendor\fonts\FontAwesome.otf" />
     <Content Include="Views\Home\Diet.cshtml" />
     <Content Include="Views\Home\FAQ.cshtml" />
+    <Content Include="Views\Home\Sleep.cshtml" />
+    <Content Include="Views\Home\Exercise.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

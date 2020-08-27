@@ -32,6 +32,17 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
             return View();
         }
 
+        public ActionResult Sleep()
+        {
+            return View();
+        }
+
+        public ActionResult Exercise()
+        {
+            return View();
+        }
+
+
         public ActionResult FAQ()
         {
             return View();

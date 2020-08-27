@@ -15,7 +15,9 @@ flip card
     height: 100%;
     margin: 0;
     display: flex;
+
 }
+
 
 .card-front {
     transform: rotateY(0deg);
@@ -145,7 +147,7 @@ a.navbar-brand {
     font-size: 1em;
     text-transform: uppercase;
     background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-    background:white;
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
