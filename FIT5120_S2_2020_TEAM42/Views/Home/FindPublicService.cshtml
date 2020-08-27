@@ -1,8 +1,22 @@
-﻿
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+﻿<script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 
-<div id='map' style='width: 400px; height: 300px;'></div>
+
+
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+<link rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"
+      type="text/css" />
+
+<h4 class="w3pvt-title">
+    Navigation to nearest service
+</h4>
+<br />
+<div id='map' style='width: 1000px; height: 500px;'></div>
+
+
+
+
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiemhyMTk5NDEyMSIsImEiOiJjazB6NmozaGwwbHFzM2JyeGs5MHV4eW9iIn0.2kK8cbqWh3i87zRbRDIt4w';
     var map = new mapboxgl.Map({
@@ -12,7 +26,13 @@
         zoom: 13
     });
 
-    map.addControl(new MapboxDirections({
-        accessToken: mapboxgl.accessToken
-    }), 'top-left');
+    map.addControl(
+        new MapboxDirections({
+            accessToken: mapboxgl.accessToken
+        }),
+        'top-left'
+    );
 </script>
+
+
+
