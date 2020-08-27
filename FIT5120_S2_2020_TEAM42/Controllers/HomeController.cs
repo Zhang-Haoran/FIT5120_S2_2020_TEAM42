@@ -20,9 +20,8 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ReduceStress()
         {
-            ViewBag.Message = "Your contact page.";
 
             return View();
         }
@@ -43,7 +42,7 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
         }
 
 
-        public ActionResult FAQ()
+        public ActionResult FindPublicService()
         {
             return View();
         }

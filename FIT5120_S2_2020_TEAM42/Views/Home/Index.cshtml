@@ -55,19 +55,21 @@
                                 Home
                             </a>
                         </li>
+
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="~/Home/ReduceStress">
+                                Reduce Stress
+                            </a>
+                        </li>
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="~/Home/FindPublicService">
+                                Find Public Service
+                            </a>
+                        </li>
+
                         <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
                             <a class="nav-link" href="~/Home/About">
                                 About
-                            </a>
-                        </li>
-                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
-                            <a class="nav-link" href="~/Home/Contact">
-                                Contact
-                            </a>
-                        </li>
-                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
-                            <a class="nav-link" href="~/Home/FAQ">
-                                FAQ
                             </a>
                         </li>
 
@@ -95,7 +97,39 @@
                 <h4 class="w3pvt-title">
                     Data in Gippsland
                 </h4>
-                <span class="sub-title">add your caption here</span>
+                <span class="sub-title">Data visualization will be here</span>
+                <div class="slider-container col-lg-12 mx-auto">
+                    <div class="w3ls-about-banner">
+                        <div class="callbacks_container">
+                            <ul class="rslides callbacks callbacks1 slider3">
+                                <li>
+                                    <div class="slide-img slide-img1">
+                                        <div class="banner-info">
+                                            
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="slide-img slide-img2">
+                                        <div class="banner-info">
+                                            
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="slide-img slide-img3">
+                                        <div class="banner-info">
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                      
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -253,18 +287,18 @@
                                 </a>
                             </li>
                             <li>
+                                <a href="~/Home/ReduceStress">
+                                    Reduce Stress
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Home/FindPublicService">
+                                    Find Public Service
+                                </a>
+                            </li>
+                            <li>
                                 <a href="~/Home/About">
                                     About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="~/Home/Contact">
-                                    Contact
-                                </a>
-                            </li>
-                            <li>
-                                <a href="~/Home/FAQ">
-                                    FAQ
                                 </a>
                             </li>
 
@@ -374,20 +408,6 @@
         function sleepCard() {
             sleepCount++;
             var sleep = [
-                'Exercise for 30 minutes every day',
-                'Make over your running routine',
-                'Always warm up and cool down',
-                'Take this jump-rope challenge',
-                'Get a jump on weight loss',
-                'Dont cruise through cardio',
-                'Tone up on the treadmill'
-            ];
-            document.getElementById('sleepCard').innerHTML = sleep[sleepCount % sleep.length];
-        }
-
-        function exeriseCard() {
-            exeriseCount++;
-            var exerise = [
                 'Increase bright light exposure during the day',
                 'Reduce blue light exposure in the evening',
                 'Don’t consume caffeine late in the day',
@@ -404,6 +424,20 @@
                 'Get a comfortable bed, mattress, and pillow',
                 'Exercise regularly — but not before bed',
                 'Don’t drink any liquids before bed'
+            ];
+            document.getElementById('sleepCard').innerHTML = sleep[sleepCount % sleep.length];
+        }
+
+        function exeriseCard() {
+            exeriseCount++;
+            var exerise = [
+                'Exercise for 30 minutes every day',
+                'Make over your running routine',
+                'Always warm up and cool down',
+                'Take this jump-rope challenge',
+                'Get a jump on weight loss',
+                'Dont cruise through cardio',
+                'Tone up on the treadmill'
             ];
             document.getElementById('exeriseCard').innerHTML = exerise[exeriseCount % exerise.length];
         }
