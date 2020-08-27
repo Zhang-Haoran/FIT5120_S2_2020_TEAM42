@@ -1,6 +1,313 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    Layout = null;
 }
 
 
-<p>Working in progress.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyeMate!</title>
+    <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--Vendor css-->
+    <link href="~/Vendor/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="~/Vendor/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="~/Paint/css/style.css" />
+    <link rel="stylesheet" href="~/Paint/css/farbtastic.css" type="text/css" />
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="~/Paint/js/jquery.min.js"></script>
+</head>
+<body>
+
+    <!-- inner banner -->
+    <section class="inner-banner-w3ls d-flex flex-column justify-content-center align-items-center">
+        <!-- header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-gradient-secondary">
+                <h1>
+                    <a class="navbar-brand" href="~/Home/Index">
+                        Aye Mate!
+                    </a>
+                </h1>
+                <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-lg-auto text-center">
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="~/Home/Index">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="~/Home/ReduceStress">
+                                Reduce Stress
+                            </a>
+                        </li>
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="~/Home/FindPublicService">
+                                Find Public Service
+                            </a>
+                        </li>
+
+                        <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link" href="~/Home/About">
+                                About
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+        </header>
+        <!-- //header -->
+    </section>
+    <!-- //inner banner -->
+    <!-- breadcrumbs -->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-flex justify-content-center bg-theme">
+            <li class="breadcrumb-item">
+                <a href="~/Home/Index">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">@ViewContext.RouteData.Values["action"].ToString()</li>
+        </ol>
+    </nav>
+    <!-- //breadcrumbs -->
+    <!-- about-->
+    <section class="single_grid_w3_main align-w3" id="about">
+        <div class="container">
+            <div class="wthree_pvt_title text-center">
+                <h4 class="w3pvt-title">
+                    Draw what you think and relax
+                </h4>
+                <br />
+
+                <div id="content">
+
+                    <form class="form-inline" id="tool-group">
+                        <img src="../Paint/img/Image_2.png" class="tool" id="small-brush">
+                        <img src="../Paint/img/Image_3.png" class="tool active" id="medium-brush">
+                        <img src="../Paint/img/Image_4.png" class="tool" id="large-brush">
+                        <img src="../Paint/img/undo.png" class="tool disabled" id="undo">
+                        <img src="../Paint/img/delete.png" class="tool" id="delete">
+                    </form>
+                    <!-- Sidebar -->
+
+
+                    <div class="components sidebar-content" id="colour-group">
+                        <!--<p>Dummy Heading</p>-->
+                        <div id="colorpicker" style="float:left" ;></div>
+                        <br />
+                        <div style="display: -webkit-flex">
+                            <!--<a href="#">About</a>-->
+                            <div class="color-block active" id="colour-select-1"></div>
+                            <div class="color-block" id="colour-select-2"></div>
+                            <div class="color-block" id="colour-select-3"></div>
+                        </div>
+                        <div style="display: -webkit-flex">
+                            <div class="color-block" id="colour-select-4"></div>
+                            <div class="color-block" id="colour-select-5"></div>
+                            <div class="color-block" id="colour-select-6"></div>
+
+                        </div>
+
+                        
+                    </div>
+                    <div>
+                        <div class="btn-group dropright float-right">
+                            <button type="button" class="btn btn-secondary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-button">
+                                Canvas
+                            </button>
+                            <div class="dropdown-menu" id="paper-group">
+                                <!-- Dropdown menu links -->
+                                <img src="../Paint/img/canvas_bg1.jpg" class="paper">
+                                <img src="../Paint/img/canvas_bg_2.jpg" class="paper">
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <canvas id="canvas"></canvas>
+                    <div id="my_popup" class=well>
+
+                        The canvas will be cleaned in 10 second, click the screen to continue
+
+                    </div>
+                </div>
+                   
+                    <!-- Page Content -->
+                    
+                </div>
+
+
+
+            
+
+        </div>
+    </section>
+    <!-- //about -->
+
+    <!-- footer -->
+    <footer class="footer py-md-5 pt-md-3 pb-sm-5">
+        <div class="container-fluid">
+            <div class="row p-sm-4 px-3 py-5">
+                <div class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
+                    <h2>
+                        <a class="navbar-brand" href="~/Home/Index">
+                            Aye Mate
+                        </a>
+                    </h2>
+                    <p class="my-3 text-white">
+                        Donec consequat sam libero tempore, cum soluta nobis est eligendi optio
+                        cumque
+                        nihil impedit quo minus
+                    </p>
+                    <p class="text-white">
+                        Id quod possimusapien ut leo cursus rhoncus. Nullam dui mi, vulputate ac metus at, semper
+                        varius
+                        orci.
+                    </p>
+                </div>
+                <div class="col-lg-2  col-md-6 mt-md-0 mt-5">
+                    <div class="footerv2-w3ls">
+                        <h3 class="mb-3 w3f_title">Navigation</h3>
+                        <hr>
+                        <ul class="list-w3pvtits">
+                            <li>
+                                <a href="~/Home/Index">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Home/ReduceStress">
+                                    Reduce Stress
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Home/FindPublicService">
+                                    Find Public Service
+                                </a>
+                            </li>
+                            <li>
+                                <a href="~/Home/About">
+                                    About
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- //footer bottom -->
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <div class="cpy-right text-center bg-theme">
+        <p class="text-white">
+            ©2020 AyeMate! All rights reserved | Design by
+            <a href="http://w3layouts.com"> W3layouts.</a>
+        </p>
+    </div>
+    <!-- //copyright -->
+    <!--Vendor js-->
+    @Scripts.Render("~/Vendor/js/jquery-2.2.3.min.js")
+    @Scripts.Render("~/Vendor/js/responsiveslides.min.js")
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $(".slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    @Scripts.Render("~/Vendor/js/move-top.js")
+    @Scripts.Render("~/Vendor/js/easing.js")
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+
+
+    <script type="text/javascript" src="~/Paint/js/jquery.cursometer.1.0.0.js"></script>
+    <script type="text/javascript" src="~/Paint/js/farbtastic.js"></script>
+    <script type="text/javascript" src="~/Paint/js/jquery.popupoverlay.js"></script>
+    <script type="text/javascript" src="~/Paint/js/popper.min.js"></script>
+    <script type="text/javascript" src="~/Paint/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Paint/js/component.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#colorpicker').farbtastic('#color');
+            // var color_picker = $.farbtastic('#colorpicker');
+            // color_picker.setColor('#ff0000')
+            // initialize();
+
+            // }
+
+        });
+        // $('.dropdown-toggle').dropdown()
+        // $('canvas').cursometer();
+
+
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", initialize);
+        const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        document.getElementById('canvas').style['min-height'] = height + "px";
+    </script>
+    <script type="text/javascript" src="~/Paint/js/draw.js"></script>
+    <script type="text/javascript" src="~/Paint/js/line.js"></script>
+
+
+</body>
+</html>
