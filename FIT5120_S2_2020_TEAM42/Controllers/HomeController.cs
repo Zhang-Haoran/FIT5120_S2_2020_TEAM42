@@ -13,9 +13,14 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult KnowAnxiety()
         {
-            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ActionResult ImproveWellbeing()
+        {
 
             return View();
         }

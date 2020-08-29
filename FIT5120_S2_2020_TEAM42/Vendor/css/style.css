@@ -4,6 +4,16 @@
 	License URL: http://creativecommons.org/licenses/by/3.0/
  --*/
 
+
+
+.center {
+    margin: auto;
+    width: 100%;
+    height: 600px;
+   
+}
+
+
 /*
 flip card
 */
@@ -15,7 +25,6 @@ flip card
     height: 100%;
     margin: 0;
     display: flex;
-
 }
 
 

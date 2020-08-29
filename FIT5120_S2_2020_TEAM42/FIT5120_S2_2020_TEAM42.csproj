@@ -215,6 +215,7 @@
     <Content Include="Vendor\css\gallery.css" />
     <Content Include="Vendor\css\style.css" />
     <Content Include="Vendor\fonts\fontawesome-webfont.svg" />
+    <Content Include="Vendor\images\anxiety.jpg" />
     <Content Include="Vendor\images\banner.jpg" />
     <Content Include="Vendor\images\close.png" />
     <Content Include="Vendor\images\diet.jpg" />
@@ -235,6 +236,7 @@
     <Content Include="Vendor\images\t3.jpg" />
     <Content Include="Vendor\images\t4.jpg" />
     <Content Include="Vendor\images\tips.jpg" />
+    <Content Include="Vendor\images\wellbeing.jpg" />
     <Content Include="Vendor\js\bootstrap.js" />
     <Content Include="Vendor\js\easing.js" />
     <Content Include="Vendor\js\jquery-2.2.3.min.js" />
@@ -253,7 +255,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\ReduceStress.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -285,6 +286,8 @@
     <Content Include="Views\Home\FindPublicService.cshtml" />
     <Content Include="Views\Home\Sleep.cshtml" />
     <Content Include="Views\Home\Exercise.cshtml" />
+    <Content Include="Views\Home\ImproveWellbeing.cshtml" />
+    <Content Include="Views\Home\KnowAnxiety.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
