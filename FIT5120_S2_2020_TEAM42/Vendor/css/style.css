@@ -367,6 +367,13 @@ span.sub-title {
     background-size: cover;
 }
 
+.single_grid_w33 {
+    background: url(../images/dog.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 400px;
+    border: 1px solid #d4d4d4;
+}
+
 span.wthree-line {
     display: block;
     width: 140px;

@@ -218,6 +218,7 @@
     <Content Include="Vendor\images\banner.jpg" />
     <Content Include="Vendor\images\close.png" />
     <Content Include="Vendor\images\diet.jpg" />
+    <Content Include="Vendor\images\dog.jpg" />
     <Content Include="Vendor\images\exercise.jpg" />
     <Content Include="Vendor\images\footer.jpg" />
     <Content Include="Vendor\images\g1.jpg" />
