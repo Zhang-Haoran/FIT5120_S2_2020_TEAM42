@@ -9,11 +9,10 @@ body {
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+    margin: 0;
+    color: #333;
+    font-size: 0.95em;
+    line-height: 1.7;
 }
 
 a, a:hover, a:focus {
