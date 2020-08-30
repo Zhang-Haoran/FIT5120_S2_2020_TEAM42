@@ -156,7 +156,7 @@ a.navbar-brand {
     font-size: 1em;
     text-transform: uppercase;
     background: -webkit-radial-gradient(33% 100% circle, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
-    background: white;
+    background: radial-gradient(circle at 35% 100%, #6cd86c 20%, #fcff3b 30%, #6cd86c 62%, #fcff3b 70%, #15b915);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

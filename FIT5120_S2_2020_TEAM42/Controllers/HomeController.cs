@@ -13,6 +13,11 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+        }
+
         public ActionResult KnowAnxiety()
         {
 
@@ -25,7 +30,7 @@ namespace FIT5120_S2_2020_TEAM42.Controllers
             return View();
         }
 
-        public ActionResult ReduceStress()
+        public ActionResult Stressbuster()
         {
 
             return View();

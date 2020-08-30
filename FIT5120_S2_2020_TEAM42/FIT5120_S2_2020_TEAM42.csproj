@@ -255,7 +255,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\ReduceStress.cshtml" />
+    <Content Include="Views\Home\Stressbuster.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -288,6 +288,7 @@
     <Content Include="Views\Home\Exercise.cshtml" />
     <Content Include="Views\Home\ImproveWellbeing.cshtml" />
     <Content Include="Views\Home\KnowAnxiety.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
