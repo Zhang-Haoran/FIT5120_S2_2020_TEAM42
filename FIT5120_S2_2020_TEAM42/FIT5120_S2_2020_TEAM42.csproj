@@ -215,6 +215,12 @@
     <Content Include="Vendor\css\gallery.css" />
     <Content Include="Vendor\css\style.css" />
     <Content Include="Vendor\fonts\fontawesome-webfont.svg" />
+    <Content Include="Vendor\images\1.png" />
+    <Content Include="Vendor\images\2.png" />
+    <Content Include="Vendor\images\3.png" />
+    <Content Include="Vendor\images\4.png" />
+    <Content Include="Vendor\images\5.png" />
+    <Content Include="Vendor\images\6.png" />
     <Content Include="Vendor\images\anxiety.jpg" />
     <Content Include="Vendor\images\banner.jpg" />
     <Content Include="Vendor\images\close.png" />
