@@ -217,6 +217,7 @@
     <Content Include="Vendor\fonts\fontawesome-webfont.svg" />
     <Content Include="Vendor\images\1.png" />
     <Content Include="Vendor\images\10.png" />
+    <Content Include="Vendor\images\100.png" />
     <Content Include="Vendor\images\11.png" />
     <Content Include="Vendor\images\12.png" />
     <Content Include="Vendor\images\13.png" />
