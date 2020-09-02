@@ -239,6 +239,7 @@
     <Content Include="Vendor\images\7.png" />
     <Content Include="Vendor\images\8.png" />
     <Content Include="Vendor\images\9.png" />
+    <Content Include="Vendor\images\A.png" />
     <Content Include="Vendor\images\anxiety.jpg" />
     <Content Include="Vendor\images\banner.jpg" />
     <Content Include="Vendor\images\close.png" />
@@ -250,10 +251,13 @@
     <Content Include="Vendor\images\g2.jpg" />
     <Content Include="Vendor\images\g3.jpg" />
     <Content Include="Vendor\images\g4.jpg" />
+    <Content Include="Vendor\images\H.png" />
     <Content Include="Vendor\images\inner-banner.jpg" />
     <Content Include="Vendor\images\move-top.png" />
     <Content Include="Vendor\images\next.png" />
     <Content Include="Vendor\images\prev.png" />
+    <Content Include="Vendor\images\S.png" />
+    <Content Include="Vendor\images\SH.png" />
     <Content Include="Vendor\images\sleep.jpg" />
     <Content Include="Vendor\images\t1.jpg" />
     <Content Include="Vendor\images\t2.jpg" />
