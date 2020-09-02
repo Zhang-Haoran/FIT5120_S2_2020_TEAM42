@@ -362,18 +362,18 @@ span.sub-title {
 /* about */
 
 .single_grid_text {
-    padding: 6vw 0;
+    padding: 2vw 0;
 }
 
 .single_grid_w3 {
-    background: url(../images/g1.jpg) no-repeat center;
+    background: url(../images/anxiety.jpg) no-repeat center;
     background-size: cover;
     min-height: 400px;
     border: 1px solid #d4d4d4;
 }
 
 .single_grid_w31 {
-    background: url(../images/g2.jpg) no-repeat center;
+    background: url(../images/wellbeing.jpg) no-repeat center;
     background-size: cover;
 }
 
