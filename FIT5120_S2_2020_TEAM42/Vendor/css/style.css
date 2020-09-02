@@ -360,6 +360,10 @@ span.sub-title {
 /* //title */
 
 /* about */
+.yellow-highlight {
+    text-shadow: -3px 0px 3px yellow, 3px 0px 3px yellow, 6px 0px 6px yellow, -6px 0px 6px yellow;
+}
+
 
 .single_grid_text {
     padding: 2vw 0;
