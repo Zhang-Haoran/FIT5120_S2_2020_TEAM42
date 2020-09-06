@@ -8,168 +8,298 @@
 
 <div class="testimonials align-w3" id="testi">
     <div class="container">
-        <div class="wthree_pvt_title text-center">
+        @*<div class="wthree_pvt_title text-center">
             <h4 class="w3pvt-title">
                Exercise
             </h4>
-        </div>
+        </div>*@
 
-        <div id="accordion">
-            <div class="card bg-success">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
-                            <p><strong>Benefits of exercise</strong></p><i class="fa"></i>
-                        @*</button>*@
-                    </h5>
-                </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Benefits of exercise </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">What motivates kids?</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="causes-tab" data-toggle="tab" href="#causes" role="tab" aria-controls="causes" aria-selected="false">How to improve your child’s physical activity?</a>
+            </li>
+            @*<li class="nav-item">
+                <a class="nav-link" id="help-tab" data-toggle="tab" href="#help" role="tab" aria-controls="help" aria-selected="false">How can you help</a>
+            </li>*@
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>Overview</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body bg-white" style="text-align:left">
-                        <p><span style="font-weight: 400;">Have you ever wondered why going for a walk, cycling, swimming or playing a game of footy makes you feel great? This happens as &lsquo;feel good&rsquo; chemicals called endorphins are released from the brain.</span></p>
-                        <p>&nbsp;</p>
-                        <p><span style="font-weight: 400;">There are many proven benefits of exercise which helps to improve both your physical and mental health. Exercise helps to overcome the symptoms of depression and anxiety. Exercise acts as a &lsquo;tool in the tool belt&rsquo; for the individuals facing mental health issues as it helps to manage its symptoms, improve the physical health, sleep quality, and overall quality of life.</span></p>
-                        <p>&nbsp;</p>
-                        <p><span style="font-weight: 400;">Exercise can also:</span></p>
-                        <div class="row space-sec">
-                            <!-- blog grid -->
-                            <div class="col-lg-2 col-md-6 mt-sm-0 mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/21.png" style="height:100px" />
-                                        <p>	It helps to boost the energy</p>
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- //blog grid -->
-                            <!-- blog grid -->
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/22.png" style="height:100px" />
-                                        <p>Improvement in mood</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- //blog grid -->
-                            <!-- blog grid -->
-                            <div class="col-lg-2 col-md-6 mt-lg-0 mt-4 mx-auto blog-end">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0  position-relative bg-white"  style="border: none">
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/23.png" style="height:100px" />
-                                        <p>	Build endurance</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/24.png" style="height:100px" />
-                                        <p>	Helps to keep your body at a healthy weight</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/25.jpg" style="height:100px" />
-                                        <p>builds self-confidence and feelings of accomplishment</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/26.png" style="height:100px" />
-                                        <p>help you be more sociable</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/27.png" style="height:100px" />
-                                        <p>Helps you to sleep better</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/28.png" style="height:100px" />
-                                        <p>Reduces stress</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/29.jpg" style="height:100px" />
-                                        <p>It can distract you from your worries and negative thoughts</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
-                                <div class="card bg-white"  style="border: none">
-                                    <div class="card-header p-0 position-relative bg-white"  style="border: none">
-
-
-
-                                        <img class="card-img-bottom" src="~/Vendor/images/30.jpg" style="height:100px" />
-                                        <p>Improves memory</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <!-- //blog grid -->
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <p><strong>Have you ever wondered why going for a walk, cycling, swimming or playing a game of footy makes you feel great? This happens as &lsquo;feel good&rsquo; chemicals called endorphins are released from the brain.</strong></p>
+                                            <p><strong>&nbsp;</strong></p>
+                                            <p><strong>There are many proven benefits of exercise which can help improve your child&rsquo;s physical and mental health. Exercise helps to overcome the symptoms of depression and anxiety. Exercise acts as a &lsquo;tool in the tool belt&rsquo; for young individuals facing mental health issues as it helps to manage its symptoms, improve the physical health, sleep quality, and overall quality of life.</strong></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-           
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>Benefits of exercise</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <p>Exercise can help your child in several ways:</p>
+                                            <p>&nbsp;</p>
+                                            <ul>
+                                                <li>It helps boost their energy</li>
+                                                <li>It can lift children&rsquo;s mood</li>
+                                                <li>It can build endurance</li>
+                                                <li>It helps your children keep a healthy weight</li>
+                                                <li>It builds self-confidence and feelings of accomplishment</li>
+                                                <li>It helps children learn social skills and make friends</li>
+                                                <li>It will help your child sleep better</li>
+                                                <li>It reduces stress</li>
+                                                <li>It can distract your child from their worries and negative thoughts</li>
+                                                <li>It can improve memory of your child</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="row space-sec">
+                                <!-- blog grid -->
+                                <div class="col-lg-2 col-md-6 mt-sm-0 mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/21.png" style="height:100px" />
+                                            <p>	It helps to boost the energy</p>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- //blog grid -->
+                                <!-- blog grid -->
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/22.png" style="height:100px" />
+                                            <p>Improvement in mood</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- //blog grid -->
+                                <!-- blog grid -->
+                                <div class="col-lg-2 col-md-6 mt-lg-0 mt-4 mx-auto blog-end">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0  position-relative bg-white" style="border: none">
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/23.png" style="height:100px" />
+                                            <p>	Build endurance</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/24.png" style="height:100px" />
+                                            <p>	Helps to keep your body at a healthy weight</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/25.jpg" style="height:100px" />
+                                            <p>builds self-confidence and feelings of accomplishment</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/26.png" style="height:100px" />
+                                            <p>help you be more sociable</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/27.png" style="height:100px" />
+                                            <p>Helps you to sleep better</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/28.png" style="height:100px" />
+                                            <p>Reduces stress</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/29.jpg" style="height:100px" />
+                                            <p>It can distract you from your worries and negative thoughts</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-md-6 mt-md-0  mt-5">
+                                    <div class="card bg-white" style="border: none">
+                                        <div class="card-header p-0 position-relative bg-white" style="border: none">
+
+
+
+                                            <img class="card-img-bottom" src="~/Vendor/images/30.jpg" style="height:100px" />
+                                            <p>Improves memory</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- //blog grid -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>What motivates kids?</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <p>So there's a lot to gain from regular physical activity, but how do you encourage kids to do it? The three keys are:</p>
+                                            <ol>
+                                                <li><strong>Select the right activities for your child's age:</strong> If you don't, the child may be bored or frustrated.</li>
+                                                <li><strong>Give kids plenty of opportunity to be active:</strong> Kids need parents to make activity easy by providing equipment, signing them up for classes or sports teams, and taking them to playgrounds and other active spots.</li>
+                                                <li><strong>Make sure to focus on fun:</strong> Kids won't do something they don't enjoy.</li>
+                                            </ol>
+                                            <p>When kids enjoy an activity, they want to do more of it. Practicing a skill whether it's swimming or riding a bicycle improves their abilities and helps them feel accomplished, especially when the effort is noticed and praised. These good feelings often make kids want to continue the activity and even try others.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="causes" role="tabpanel" aria-labelledby="causes-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>How to improve your child’s physical activity?</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <ol>
+                                                <li>Choose activities your child likes and that are fun.</li>
+                                                <li>Make sure there's lots of variety and your child tries different things.</li>
+                                                <li>Build physical activity into your child's day &ndash; for example, by walking to school, washing the car or helping in the garden.</li>
+                                                <li>Reward your child with an activity like a visit to the park rather than with screen time.</li>
+                                                <li>Praise and encourage your child.</li>
+                                                <li>Be active yourself and involve the whole family.</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">
+
+            </div>
         </div>
+
+
     </div>
 </div>

@@ -8,51 +8,72 @@
 
 <div class="testimonials align-w3" id="testi">
     <div class="container">
-        <div class="wthree_pvt_title text-center">
-            <h4 class="w3pvt-title">
-                Understand Wellbeing
-            </h4>
+        @*<div class="wthree_pvt_title text-center">
+                <h4 class="w3pvt-title">
+                    Understand Wellbeing
+                </h4>
 
-        </div>
+            </div>*@
 
-        <div id="accordion">
-            <div class="card bg-success">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
-                            <p><strong>What is wellbeing</strong></p><i class="fa"></i>
-                        @*</button>*@
-                    </h5>
-                </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Aspects of wellbeing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Ways to improve</a>
+            </li>
+            @*<li class="nav-item">
+                <a class="nav-link" id="causes-tab" data-toggle="tab" href="#causes" role="tab" aria-controls="causes" aria-selected="false">Causes of anxiety disorder</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="help-tab" data-toggle="tab" href="#help" role="tab" aria-controls="help" aria-selected="false">How can you help</a>
+            </li>*@
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>Overview</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
 
-                <div id="collapseOne" @*class="collapse show"*@ aria-labelledby="headingOne">
-                    <div class="card-body bg-white" style="text-align:left">
-                        <p><span style="font-weight: 400;">Wellbeing is a complex combination of a person's physical, mental, emotional and social health factors which is strongly linked to an individual's happiness and satisfaction.&nbsp;</span></p><p>&nbsp;</p>
-                        <p><span style="font-weight: 400;">Feelings of wellbeing are crucial which act as &lsquo;guardian&rsquo; to the overall health of an individual, enabling the individuals to successfully overcome difficulties like hopelessness, anxiety, depression and achieve what they want out of life.&nbsp;</span></p>
-                        <p><span style="font-weight: 400;">Wellbeing helps us:</span></p>
-                        <ol>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">stay resilient when times get tough</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">build social supports and self-efficacy</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">emerge from our challenges even stronger, knowing we have the ability to cope with adversity.</span></li>
-                        </ol>
-                        <p><span style="font-weight: 400;">Past experiences, attitudes, physical or emotional trauma following specific incidents and outlook can negatively impact wellbeing of the individual.</span></p>
-                        <p>&nbsp;</p>
+                    <div id="collapseOne" @*class="collapse show"*@ aria-labelledby="headingOne">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <p>Wellbeing is a complex combination of a person's physical, mental, emotional and social health factors which is strongly linked to an individual's happiness and satisfaction. Hence, paying attention to your child&rsquo;s wellbeing plays a vital role.</p>
+                            <p>&nbsp;</p>
+                            <p>Feelings of wellbeing are crucial which will act as a &lsquo;guardian&rsquo; to the overall health of your child, It will enable your child to successfully overcome difficulties like hopelessness, anxiety, depression and achieve what they want out of their life.</p>
+                            <p>&nbsp;</p>
+                            <p>Wellbeing helps your child to:</p>
+                            <ol>
+                                <li>Stay resilient when times get tough</li>
+                                <li>Build social supports and self-efficacy</li>
+                                <li>Emerge from challenges even stronger, realizing the ability to cope with adversity.</li>
+                            </ol>
+                            <p>Past experiences, attitudes, physical or emotional trauma following specific incidents and outlook can negatively impact wellbeing of the individual.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card bg-primary">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        @*<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">*@
-                            <p><strong>How to improve?</strong></p><i class="fa"></i>
-                        @*</button>*@
-                    </h5>
-                </div>
-                <div id="collapseTwo" @*class="collapse"*@ aria-labelledby="headingTwo">
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card bg-primary">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">*@
+                            <p><strong>Aspects of wellbeing</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" @*class="collapse"*@ aria-labelledby="headingTwo">
 
 
-                    <div class="card-body bg-white" style="text-align:left">
-                        <p>Working on the below 5 building blocks (PERMA) by Professor Martin Seligman contribute to our wellbeing: </p>
+                        <div class="card-body bg-white" style="text-align:left">
+                            <p>Working on the below 5 building blocks (PERMA) by Professor Martin Seligman contribute to our wellbeing: </p>
                         </div>
                         <div class="card-body bg-white" style="text-align:center">
 
@@ -171,13 +192,82 @@
                     </div>
 
                 </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>Ways to improve</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
 
+                    <div id="collapseOne" @*class="collapse show"*@ aria-labelledby="headingOne">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <p>Below are some of the ways to improve wellbeing and resilience:</p>
+                            <p>&nbsp;</p>
+                            <ol>
+                                <li><strong>Help them be creative</strong>.&nbsp; Activities or hobbies can keep them distracted, have a positive impact on their sense of mental health and wellbeing and can help increase their confidence and self-esteem. This could be building something, playing an instrument, gardening, art, doing a puzzle, painting, cooking, writing etc.</li>
+                                <li><strong>Invest time in relationships</strong>. Spend some quality time with your children and give them the feeling that they can share anything with you.</li>
+                                <li><strong>Help them focus on their strengths</strong>. Having positive thoughts can help them feel better. Engage them in activities that promote positive thoughts.</li>
+                                <li><strong>Take them out.</strong> When we relax, we give yourself permission to let go of worries for a while. Relaxing gives our mind and body time to recover from the stresses of everyday life. Try some relaxation apps to guide them on how to relax.</li>
+                                <li><strong>Keep a check on their sleeping habits</strong>: One cannot function properly without sleep. Sleep helps us to repair and restore our bodies and minds. Make sure they have a good night&rsquo;s sleep. Click <u>here </u>to understand more about the relationship between sleep and mental wellbeing.</li>
+                                <li><strong>Keep them active:</strong>. Physical health plays a key role in keeping them mentally healthy. Being physically active can improve their mood and reduce stress.Click <u>here </u>to understand more about the relationship between exercise and mental wellbeing.</li>
+                                <li><strong>Provide a healthy diet:</strong>. Nutrition and eating well can make a difference to the way they feel and in-turn may improve their mental health. Click <u>here </u>to understand more about the relationship between diet and mental wellbeing.</li>
+                                <li><strong>Facilitate mindfulness:</strong>. Mindfulness can help your child feel better and reduce stress. It will help them manage their day.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="tab-pane fade" id="causes" role="tabpanel" aria-labelledby="causes-tab">
 
+            </div>
+            <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">
 
-
+            </div>*@
+        </div>
 
 
 
 
     </div>
 </div>
+
+
+
+@*<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Signs of anxiety and stress in Children</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">types of anxiety</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="causes-tab" data-toggle="tab" href="#causes" role="tab" aria-controls="causes" aria-selected="false">Causes of anxiety disorder</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" id="help-tab" data-toggle="tab" href="#help" role="tab" aria-controls="help" aria-selected="false">How can you help</a>
+    </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+    </div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+    </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+    </div>
+    <div class="tab-pane fade" id="causes" role="tabpanel" aria-labelledby="causes-tab">
+
+    </div>
+    <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">
+
+    </div>
+</div>*@

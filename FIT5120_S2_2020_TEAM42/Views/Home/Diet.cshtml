@@ -55,7 +55,7 @@
 
 <div class="testimonials align-w3" id="testi">
     <div class="container">
-        <div class="wthree_pvt_title text-center">
+        @*<div class="wthree_pvt_title text-center">
             <h4 class="w3pvt-title">
                 Diet
             </h4>
@@ -64,38 +64,88 @@
                 “We are what we eat — not only physically, but mentally and emotionally as well.”<br />
                 ― Derek Rydall
             </span>
-        </div>
+        </div>*@
 
-        <div id="accordion">
-            <div class="card bg-success">
-                <div class="card-header" id="headingOne">
-                    <h5 class="mb-0">
-                        @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">The fundamentals of healthy eating</a>
+            </li>
+            @*<li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">types of anxiety</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="causes-tab" data-toggle="tab" href="#causes" role="tab" aria-controls="causes" aria-selected="false">Causes of anxiety disorder</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="help-tab" data-toggle="tab" href="#help" role="tab" aria-controls="help" aria-selected="false">How can you help</a>
+            </li>*@
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
                             <p><strong>Diet and Mealth Health</strong></p><i class="fa"></i>
-                        @*</button>*@
-                    </h5>
-                </div>
+                            @*</button>*@
+                        </h5>
+                    </div>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body bg-white" style="text-align:left">
-                        <p><span style="font-weight: 400;">Improving mental health might initially seem like it has nothing to do with what we eat but there is a strong correlation between what we eat and how we feel!</span></p>
-                        <p><span style="font-weight: 400;">Poor diet can make you feel low, lethargic and might increase the symptoms of depression and anxiety as well. On the other hand, having a nutritious diet helps you keep a healthy heart and weight that in turn reduces the risk of chronic diseases. It also helps with sleeping patterns. </span><span style="font-weight: 400;">Human brain needs an adequate amount of nutrients to stay active.</span></p>
-                        <p><span style="font-weight: 400;">The type of food we eat has the ability to affect our mood. So choose your diet wisely so as to lift your mood, energy levels and concentration.</span></p>
-                        <p>&nbsp;</p>
-                        <p><strong>Poor nutrition has been associated with:</strong></p>
-                        <ol>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">Externalising behaviour such as hyperactivity, aggression, disobedience</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">Attention Deficit Hyperactivity Disorder (ADHD)&nbsp;</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">Tiredness</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">Psychological stress, anxiety and depression</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">Delayed brain development</span></li>
-                            <li style="font-weight: 400;"><span style="font-weight: 400;">Cognitive function impairments associated with learning and memory</span></li>
-                        </ol>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <p><span style="font-weight: 400;">Improving mental health might initially seem like it has nothing to do with what we eat but there is a strong correlation between what we eat and how we feel!</span></p>
+                            <p><span style="font-weight: 400;">Poor diet can make you feel low, lethargic and might increase the symptoms of depression and anxiety as well. On the other hand, having a nutritious diet helps you keep a healthy heart and weight that in turn reduces the risk of chronic diseases. It also helps with sleeping patterns. </span><span style="font-weight: 400;">Human brain needs an adequate amount of nutrients to stay active.</span></p>
+                            <p><span style="font-weight: 400;">The type of food we eat has the ability to affect our mood. So choose your diet wisely so as to lift your mood, energy levels and concentration.</span></p>
+                            <p>&nbsp;</p>
+                            <p><strong>Poor nutrition has been associated with:</strong></p>
+                            <ol>
+                                <li style="font-weight: 400;"><span style="font-weight: 400;">Externalising behaviour such as hyperactivity, aggression, disobedience</span></li>
+                                <li style="font-weight: 400;"><span style="font-weight: 400;">Attention Deficit Hyperactivity Disorder (ADHD)&nbsp;</span></li>
+                                <li style="font-weight: 400;"><span style="font-weight: 400;">Tiredness</span></li>
+                                <li style="font-weight: 400;"><span style="font-weight: 400;">Psychological stress, anxiety and depression</span></li>
+                                <li style="font-weight: 400;"><span style="font-weight: 400;">Delayed brain development</span></li>
+                                <li style="font-weight: 400;"><span style="font-weight: 400;">Cognitive function impairments associated with learning and memory</span></li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card bg-success">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            @*<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">*@
+                            <p><strong>The fundamentals of healthy eating</strong></p><i class="fa"></i>
+                            @*</button>*@
+                        </h5>
+                    </div>
 
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body bg-white" style="text-align:left">
+                            <p>While some extreme diets may suggest otherwise, we all need a balance of protein, fat, carbohydrates, fiber, vitamins, and minerals in our diets to sustain a healthy body. You don&rsquo;t need to eliminate certain categories of food from your child&rsquo;s diet, but rather select the healthiest options from each category for them:</p>
+                            <p><strong>Protein:</strong> Will help to give your child energy to cope up with their daily activities while also supporting their mood and cognitive function.</p>
+                            <p><strong>Fat</strong>: Not all fat is the same. In fact, healthy fats such as omega-3s are vital to your children&rsquo;s physical and emotional health. Including more healthy fat in your child&rsquo;s diet can help improve your child&rsquo;s mood, boost their well-being, and help them to be fit.</p>
+                            <p><strong>Calcium</strong>: As well as leading to osteoporosis, not getting enough calcium in your child&rsquo;s diet can also contribute to anxiety, depression, and sleep difficulties. It&rsquo;s vital to include calcium-rich foods in your child&rsquo;s diet, limit those that deplete calcium, and get enough magnesium and vitamins D and K to help calcium do its job</p>
+                            <p><strong>Carbohydrates:</strong> are one of your body&rsquo;s main sources of energy. But most should come from complex, unrefined carbs (vegetables, whole grains, fruit) rather than sugars and refined carbs. Cutting back on white bread, pastries, starches, and sugar can prevent rapid spikes in blood sugar, fluctuations in mood and energy, and a build-up of fat, especially around your waistline</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+            </div>
+            <div class="tab-pane fade" id="causes" role="tabpanel" aria-labelledby="causes-tab">
+
+            </div>
+            <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="help-tab">
+
+            </div>*@
         </div>
+
     </div>
 </div>
 
