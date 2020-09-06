@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>AyeMate</title>
     <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon">
     <script>
@@ -18,7 +19,46 @@
     @Styles.Render("~/Vendor/css/bootstrap.css")
     @Styles.Render("~/Vendor/css/style.css")
     @Styles.Render("~/Vendor/css/font-awesome.min.css")
-    
+    <!-- Custom Stylesheet -->
+    <link href="~/quixlab/plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    <!-- Page plugins css -->
+    <link href="~/quixlab/plugins/clockpicker/dist/jquery-clockpicker.min.css" rel="stylesheet">
+    <!-- Color picker plugins css -->
+    <link href="~/quixlab/plugins/jquery-asColorPicker-master/css/asColorPicker.css" rel="stylesheet">
+    <!-- Date picker plugins css -->
+    <link href="~/quixlab/plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Daterange picker plugins css -->
+    <link href="~/quixlab/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+    <link href="~/quixlab/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link href="~/quixlab/css/style.css" rel="stylesheet">
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="~/quixlab/plugins/common/common.min.js"></script>
+    <script src="~/quixlab/js/custom.min.js"></script>
+    <script src="~/quixlab/js/settings.js"></script>
+    <script src="~/quixlab/js/gleek.js"></script>
+    <script src="~/quixlab/js/styleSwitcher.js"></script>
+
+    <script src="~/quixlab/plugins/moment/moment.js"></script>
+    <script src="~/quixlab/plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+    <!-- Clock Plugin JavaScript -->
+    <script src="~/quixlab/plugins/clockpicker/dist/jquery-clockpicker.min.js"></script>
+    <!-- Color Picker Plugin JavaScript -->
+    <script src="~/quixlab/plugins/jquery-asColorPicker-master/libs/jquery-asColor.js"></script>
+    <script src="~/quixlab/plugins/jquery-asColorPicker-master/libs/jquery-asGradient.js"></script>
+    <script src="~/quixlab/plugins/jquery-asColorPicker-master/dist/jquery-asColorPicker.min.js"></script>
+    <!-- Date Picker Plugin JavaScript -->
+    <script src="~/quixlab/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <!-- Date range Plugin JavaScript -->
+    <script src="~/quixlab/plugins/timepicker/bootstrap-timepicker.min.js"></script>
+    <script src="~/quixlab/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <script src="~/quixlab/js/plugins-init/form-pickers-init.js"></script>
+
+
+
     <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
 </head>

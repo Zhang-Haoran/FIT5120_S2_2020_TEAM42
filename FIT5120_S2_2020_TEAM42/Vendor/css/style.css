@@ -5,6 +5,13 @@
  --*/
 
 
+
+
+
+
+
+
+
 [data-toggle="collapse"] .fa:before {
     content: "\f139";
 }
@@ -370,7 +377,7 @@ span.sub-title {
 }
 
 .single_grid_w3 {
-    background: url(../images/anxiety.jpg) no-repeat center;
+    background: url('../images/Home 4.jpg') no-repeat center;
     background-size: cover;
     min-height: 400px;
     border: 1px solid #d4d4d4;
