@@ -2219,7 +2219,7 @@ input[type="button"].btn-block {
   @media screen and (prefers-reduced-motion: reduce) {
     .collapsing {
       transition: none; } }
-
+/*
 .dropup,
 .dropright,
 .dropdown,
@@ -2393,7 +2393,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.25rem 1.5rem;
   color: #212529; }
-
+*/
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -2430,7 +2430,7 @@ input[type="button"].btn-block {
 
 .btn-group > .btn:first-child {
   margin-left: 0; }
-
+/*
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 0;
@@ -2457,7 +2457,7 @@ input[type="button"].btn-block {
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
-  padding-left: 0.75rem; }
+  padding-left: 0.75rem; }*/
 
 .btn-group-vertical {
   flex-direction: column;
